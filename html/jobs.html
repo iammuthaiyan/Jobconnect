@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnect - Jobs</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            Job<span>Connect</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="favorites.html">Favorites ❤️</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<section class="jobs-section">
+
+    <h1>Find Jobs</h1>
+
+    <div class="filters">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search job title or keyword"
+        >
+
+        <input
+            type="text"
+            id="locationInput"
+            placeholder="Location"
+        >
+
+        <select id="jobType">
+
+            <option value="">All Job Types</option>
+
+            <option value="Full Time">
+                Full Time
+            </option>
+
+            <option value="Part Time">
+                Part Time
+            </option>
+
+            <option value="Internship">
+                Internship
+            </option>
+
+        </select>
+
+        <select id="category">
+
+            <option value="">All Categories</option>
+
+            <option value="Software">
+                Software
+            </option>
+
+            <option value="Data">
+                Data
+            </option>
+
+            <option value="Marketing">
+                Marketing
+            </option>
+
+            <option value="Design">
+                Design
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div id="jobList" class="job-container"></div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+
+<script src="/js/jobs.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

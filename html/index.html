@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Find Your Dream Job</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Job<span>Connect</span></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="favorites.html">Favorites ❤️</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Your Dream Job</h1>
+        <p>Search thousands of opportunities and start your career today.</p>
+
+        <div class="search-box">
+            <input type="text" id="homeSearch" placeholder="Job title or keyword">
+            <input type="text" id="homeLocation" placeholder="Location">
+            <button onclick="searchJobs()">Search Jobs</button>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Popular Job Categories</h2>
+
+    <div class="category-container">
+
+        <div class="category-card" onclick="categorySearch('Software')">
+            <h3>💻 Software Development</h3>
+            <p>120+ Jobs</p>
+        </div>
+
+        <div class="category-card" onclick="categorySearch('Data')">
+            <h3>📊 Data Science</h3>
+            <p>80+ Jobs</p>
+        </div>
+
+        <div class="category-card" onclick="categorySearch('Marketing')">
+            <h3>📢 Marketing</h3>
+            <p>60+ Jobs</p>
+        </div>
+
+        <div class="category-card" onclick="categorySearch('Design')">
+            <h3>🎨 UI/UX Design</h3>
+            <p>50+ Jobs</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="featured">
+    <h2>Featured Jobs</h2>
+
+    <div id="featuredJobs" class="job-container"></div>
+
+    <a href="jobs.html" class="view-btn">View All Jobs</a>
+</section>
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+<script src="/js/jobs.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
